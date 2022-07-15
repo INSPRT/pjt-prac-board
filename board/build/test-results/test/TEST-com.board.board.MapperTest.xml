@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.board.board.MapperTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-15T05:35:31" hostname="TAEHEONui-MacBookAir.local" time="0.152">
+  <properties/>
+  <testcase name="testSelectList()" classname="com.board.board.MapperTest" time="0.152"/>
+  <system-out><![CDATA[14:35:29.260 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:35:29.265 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:35:29.281 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.board.board.MapperTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:35:29.286 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.board.board.MapperTest], using SpringBootContextLoader
+14:35:29.288 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.board.board.MapperTest]: class path resource [com/board/board/MapperTest-context.xml] does not exist
+14:35:29.288 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.board.board.MapperTest]: class path resource [com/board/board/MapperTestContext.groovy] does not exist
+14:35:29.289 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.board.board.MapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:35:29.289 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.board.board.MapperTest]: MapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:35:29.308 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.board.board.MapperTest]
+14:35:29.336 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/taeheon/Documents/GitHub/pjt-prac-board/board/build/classes/java/main/com/board/board/BoardApplication.class]
+14:35:29.336 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.board.board.BoardApplication for test class com.board.board.MapperTest
+14:35:29.377 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.board.board.MapperTest]: using defaults.
+14:35:29.377 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:35:29.385 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3c8bdd5b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29d2d081, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40e4ea87, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@58783f6c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3a7b503d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@512d92b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62c5bbdc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7bdf6bb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bc53649, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@88d6f9b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47d93e0d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@475b7792, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@751e664e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@160c3ec1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@182b435b]
+14:35:29.387 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7bd69e82 testClass = MapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@74d7184a testClass = MapperTest, locations = '{}', classes = '{class com.board.board.BoardApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@183e8023, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@56bca85b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@22b53226, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@ea9b7c6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@41813449, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@54e041a4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-15 14:35:29.536  INFO 9601 --- [    Test worker] com.board.board.MapperTest               : Starting MapperTest using Java 11.0.14 on TAEHEONui-MacBookAir.local with PID 9601 (started by taeheon in /Users/taeheon/Documents/GitHub/pjt-prac-board/board)
+2022-07-15 14:35:29.536  INFO 9601 --- [    Test worker] com.board.board.MapperTest               : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 14:35:29.835  INFO 9601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 14:35:29.842  INFO 9601 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-07-15 14:35:30.049  INFO 9601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 14:35:30.150  INFO 9601 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 14:35:30.239  INFO 9601 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 14:35:30.270  INFO 9601 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-15 14:35:30.375  INFO 9601 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 14:35:30.440  INFO 9601 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-15 14:35:30.531  INFO 9601 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 14:35:30.535  INFO 9601 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 14:35:30.721  WARN 9601 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 14:35:31.011  INFO 9601 --- [    Test worker] com.board.board.MapperTest               : Started MapperTest in 1.599 seconds (JVM running for 2.144)
+=========================
+50번 게시글 제목
+50번 게시글 내용
+50번 게시글 작성자
+=========================
+=========================
+49번 게시글 제목
+49번 게시글 내용
+49번 게시글 작성자
+=========================
+=========================
+48번 게시글 제목
+48번 게시글 내용
+48번 게시글 작성자
+=========================
+=========================
+47번 게시글 제목
+47번 게시글 내용
+47번 게시글 작성자
+=========================
+=========================
+46번 게시글 제목
+46번 게시글 내용
+46번 게시글 작성자
+=========================
+=========================
+45번 게시글 제목
+45번 게시글 내용
+45번 게시글 작성자
+=========================
+=========================
+44번 게시글 제목
+44번 게시글 내용
+44번 게시글 작성자
+=========================
+=========================
+43번 게시글 제목
+43번 게시글 내용
+43번 게시글 작성자
+=========================
+=========================
+42번 게시글 제목
+42번 게시글 내용
+42번 게시글 작성자
+=========================
+=========================
+41번 게시글 제목
+41번 게시글 내용
+41번 게시글 작성자
+=========================
+=========================
+40번 게시글 제목
+40번 게시글 내용
+40번 게시글 작성자
+=========================
+=========================
+39번 게시글 제목
+39번 게시글 내용
+39번 게시글 작성자
+=========================
+=========================
+38번 게시글 제목
+38번 게시글 내용
+38번 게시글 작성자
+=========================
+=========================
+37번 게시글 제목
+37번 게시글 내용
+37번 게시글 작성자
+=========================
+=========================
+36번 게시글 제목
+36번 게시글 내용
+36번 게시글 작성자
+=========================
+=========================
+35번 게시글 제목
+35번 게시글 내용
+35번 게시글 작성자
+=========================
+=========================
+34번 게시글 제목
+34번 게시글 내용
+34번 게시글 작성자
+=========================
+=========================
+33번 게시글 제목
+33번 게시글 내용
+33번 게시글 작성자
+=========================
+=========================
+32번 게시글 제목
+32번 게시글 내용
+32번 게시글 작성자
+=========================
+=========================
+31번 게시글 제목
+31번 게시글 내용
+31번 게시글 작성자
+=========================
+=========================
+30번 게시글 제목
+30번 게시글 내용
+30번 게시글 작성자
+=========================
+=========================
+29번 게시글 제목
+29번 게시글 내용
+29번 게시글 작성자
+=========================
+=========================
+28번 게시글 제목
+28번 게시글 내용
+28번 게시글 작성자
+=========================
+=========================
+27번 게시글 제목
+27번 게시글 내용
+27번 게시글 작성자
+=========================
+=========================
+26번 게시글 제목
+26번 게시글 내용
+26번 게시글 작성자
+=========================
+=========================
+25번 게시글 제목
+25번 게시글 내용
+25번 게시글 작성자
+=========================
+=========================
+24번 게시글 제목
+24번 게시글 내용
+24번 게시글 작성자
+=========================
+=========================
+23번 게시글 제목
+23번 게시글 내용
+23번 게시글 작성자
+=========================
+=========================
+22번 게시글 제목
+22번 게시글 내용
+22번 게시글 작성자
+=========================
+=========================
+21번 게시글 제목
+21번 게시글 내용
+21번 게시글 작성자
+=========================
+=========================
+20번 게시글 제목
+20번 게시글 내용
+20번 게시글 작성자
+=========================
+=========================
+19번 게시글 제목
+19번 게시글 내용
+19번 게시글 작성자
+=========================
+=========================
+18번 게시글 제목
+18번 게시글 내용
+18번 게시글 작성자
+=========================
+=========================
+17번 게시글 제목
+17번 게시글 내용
+17번 게시글 작성자
+=========================
+=========================
+16번 게시글 제목
+16번 게시글 내용
+16번 게시글 작성자
+=========================
+=========================
+15번 게시글 제목
+15번 게시글 내용
+15번 게시글 작성자
+=========================
+=========================
+14번 게시글 제목
+14번 게시글 내용
+14번 게시글 작성자
+=========================
+=========================
+13번 게시글 제목
+13번 게시글 내용
+13번 게시글 작성자
+=========================
+=========================
+12번 게시글 제목
+12번 게시글 내용
+12번 게시글 작성자
+=========================
+=========================
+11번 게시글 제목
+11번 게시글 내용
+11번 게시글 작성자
+=========================
+=========================
+10번 게시글 제목
+10번 게시글 내용
+10번 게시글 작성자
+=========================
+=========================
+9번 게시글 제목
+9번 게시글 내용
+9번 게시글 작성자
+=========================
+=========================
+8번 게시글 제목
+8번 게시글 내용
+8번 게시글 작성자
+=========================
+=========================
+7번 게시글 제목
+7번 게시글 내용
+7번 게시글 작성자
+=========================
+=========================
+6번 게시글 제목
+6번 게시글 내용
+6번 게시글 작성자
+=========================
+=========================
+5번 게시글 제목
+5번 게시글 내용
+5번 게시글 작성자
+=========================
+=========================
+4번 게시글 제목
+4번 게시글 내용
+4번 게시글 작성자
+=========================
+=========================
+3번 게시글 제목
+3번 게시글 내용
+3번 게시글 작성자
+=========================
+=========================
+2번 게시글 제목
+2번 게시글 내용
+2번 게시글 작성자
+=========================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
